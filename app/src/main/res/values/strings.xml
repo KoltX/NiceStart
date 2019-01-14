@@ -14,7 +14,7 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-    <string name="title_activity_signup">Sign in</string>
+    <string name="title_activity_signup">have you got an account? Register</string>
     <string name="backimage_description">a girl</string>
     <string name="buttonDivider">Button divider</string>
     <string name="subtitle_string">better end</string>
@@ -24,6 +24,7 @@
     <string name="password_hint">password</string>
     <string name="email_hint">email</string>
     <string name="signup_button_label">email</string>
-    <string name="cancel_button_label">email</string>
+    <string name="cancel_button_label">cancel</string>
+    <string name="slogan">for a better end</string>
 
 </resources>
