@@ -48,7 +48,7 @@
         style="@style/AuthFieldContainer"
         android:layout_marginTop="20dp"
         android:layout_below="@id/imageView"
-        android:alpha="0.5">
+        android:alpha="0.9">
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"

@@ -45,7 +45,7 @@
         style="@style/AuthFieldContainer"
         android:layout_below="@id/imageView"
         android:layout_marginTop="10dp"
-        android:alpha="0.8">
+        android:alpha="0.9">
 
     <EditText
         android:id="@+id/usernamefield"
