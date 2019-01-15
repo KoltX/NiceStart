@@ -20,33 +20,35 @@
 
 
 
-    <!--<ImageView-->
-        <!--android:layout_width="100dp"-->
-        <!--android:layout_height="100dp"-->
-        <!--android:src="@drawable/ic_tent"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:layout_marginTop="50dp"-->
-        <!--android:id="@+id/imageView" />-->
+    <ImageView
+        android:src="@drawable/ic_tent"
+        android:id="@+id/imageView"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp" />
 
-    <TextView
-        android:id="@+id/title"
-        style="@style/AuthTitle"
-        android:layout_marginTop="10dp" />
+    <!--<TextView-->
+        <!--android:id="@+id/title"-->
+        <!--style="@style/AuthTitle"-->
+        <!--android:layout_marginTop="10dp" />-->
 
-    <TextView
-        android:id="@+id/subtitle"
-        style="@style/AuthTitle"
-        android:textSize="15sp"
-        android:layout_below="@id/title"
-        android:text="@string/slogan"
-        android:layout_alignParentTop="false"
-        android:layout_marginTop="0dp" />
+    <!--<TextView-->
+        <!--android:id="@+id/subtitle"-->
+        <!--style="@style/AuthTitle"-->
+        <!--android:textSize="15sp"-->
+        <!--android:layout_below="@id/title"-->
+        <!--android:text="@string/slogan"-->
+        <!--android:layout_alignParentTop="false"-->
+        <!--android:layout_marginTop="0dp" />-->
 
     <LinearLayout
         android:id="@+id/keysLayout"
         style="@style/AuthFieldContainer"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/imageView"
+        android:alpha="0.5">
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"

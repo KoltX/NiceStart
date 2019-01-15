@@ -16,25 +16,36 @@
 
         />
 
+    <ImageView
+        android:src="@drawable/ic_tent"
+        android:id="@+id/imageView"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp" />
 
 
-    <TextView
-        android:id="@+id/title"
-        style="@style/AuthTitle"
-        />
+    <!--<TextView-->
+        <!--android:id="@+id/title"-->
+        <!--style="@style/AuthTitle"-->
+        <!--/>-->
 
-    <TextView
-        android:id="@+id/subtitle"
-        style="@style/AuthTitle"
-        android:textSize="15sp"
-        android:layout_below="@id/title"
-        android:text="@string/slogan"
-        android:layout_alignParentTop="false"
-        android:layout_marginTop="0dp" />
+    <!--<TextView-->
+        <!--android:id="@+id/subtitle"-->
+        <!--style="@style/AuthTitle"-->
+        <!--android:textSize="15sp"-->
+        <!--android:layout_below="@id/title"-->
+        <!--android:text="@string/slogan"-->
+        <!--android:layout_alignParentTop="false"-->
+        <!--android:layout_marginTop="0dp" />-->
 
     <LinearLayout
         android:id="@+id/keysLayout"
-        style="@style/AuthFieldContainer">
+        style="@style/AuthFieldContainer"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="10dp"
+        android:alpha="0.8">
 
     <EditText
         android:id="@+id/usernamefield"
