@@ -6,6 +6,7 @@
     <item
         android:title="Camera"
         android:id="@+id/camera"
+
         />
 
     <item

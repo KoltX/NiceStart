@@ -5,7 +5,8 @@
     <item
         android:title="Camera"
         android:id="@+id/camera"
-        android:icon="@android:drawable/presence_video_online"
+        android:icon="@drawable/ic_action_name"
+        app:showAsAction="ifRoom"
         />
 
     <item
