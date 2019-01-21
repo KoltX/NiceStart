@@ -2,7 +2,6 @@ package com.ramiro.ernesto.nicestart;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.drawable.AnimatedVectorDrawable;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.view.View;
