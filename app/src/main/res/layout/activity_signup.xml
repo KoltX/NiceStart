@@ -98,7 +98,12 @@
         android:layout_alignParentLeft="true"
         android:layout_toLeftOf="@id/buttonDivider"
         android:layout_marginRight="0dp"
-         style="@style/AuthButton"/>
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textSize="13sp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/button_custom"
+        android:textColor="@color/textColor" />
 
     <Button
         android:id="@+id/cancelbutton"
@@ -107,7 +112,11 @@
         android:layout_alignParentRight="true"
         android:layout_toRightOf="@id/buttonDivider"
         android:layout_marginLeft="0dp"
-        style="@style/AuthButton"
 
- />
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:textSize="13sp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/button_custom"
+        android:textColor="@color/textColor" />
 </RelativeLayout>
