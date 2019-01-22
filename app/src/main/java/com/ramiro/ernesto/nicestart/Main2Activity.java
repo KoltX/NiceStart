@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
+
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -18,10 +20,13 @@ public class Main2Activity extends AppCompatActivity {
                 ivImg = (ImageView) findViewById(R.id.imageView2);
 
         Glide.with(this)
-                .load("http://inthecheesefactory.com/uploads/source/glidepicasso/cover.jpg")
+                .load(R.drawable.tenor)
+//                .apply(new RequestOptions()
+//                     .centerCrop()
+//                )
                 .into(ivImg);
 
-
+//http://wallpapers.ae/wp-content/uploads/2015/09/Maldives-sea-wallpaper.jpg
 
 
     }
