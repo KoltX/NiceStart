@@ -1,5 +1,6 @@
 package com.ramiro.ernesto.nicestart;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -10,18 +11,28 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 
 public class MainActivity extends AppCompatActivity {
 
     private SwipeRefreshLayout swipeLayout;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        ivImg = (ImageView) findViewById(R.id.ivImg);
+//
+//        Glide.with(this)
+//                .load("http://inthecheesefactory.com/uploads/source/glidepicasso/cover.jpg")
+//                .into(ivImg);
 
 //        cast a la vista a la que aplicamos un menu contextual y la registramos
         TextView mycontext = (TextView) findViewById(R.id.textView);
@@ -86,7 +97,12 @@ public class MainActivity extends AppCompatActivity {
             Toast toast = Toast.makeText(this, "going Settings", Toast.LENGTH_LONG);
             toast.show();
         } else if (id == R.id.camera) {
+
+                    Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                    startActivity(intent);
+
             Toast toast = Toast.makeText(this, "going APPBaR CAMERA", Toast.LENGTH_LONG);
+
             toast.show();
         }
 
