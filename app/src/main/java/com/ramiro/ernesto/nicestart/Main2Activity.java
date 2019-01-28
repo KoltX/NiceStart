@@ -26,7 +26,7 @@ public class Main2Activity extends AppCompatActivity {
 //                )
                 .into(ivImg);
 
-//http://wallpapers.ae/wp-content/uploads/2015/09/Maldives-sea-wallpaper.jpg
+//"http://wallpapers.ae/wp-content/uploads/2015/09/Maldives-sea-wallpaper.jpg"
 
 
     }

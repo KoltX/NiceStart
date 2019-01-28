@@ -32,11 +32,11 @@ public class SplashScreen extends Activity {
 //        Typeface myFont = Typeface.createFromAsset(getAssets(), "bromello.otf");
 //        myTitle.setTypeface(myFont);
 
-        Typeface typeface = getResources().getFont(R.font.bromello);
-        myTitle.setTypeface(typeface);
+//        Typeface typeface = getResources().getFont(R.font.bromello);
+//        myTitle.setTypeface(typeface);
 
         //implements and starts animation
-        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.fadein);
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.leftin);
 
         mySubtitle.startAnimation(myanim);
         openApp(true);
