@@ -26,20 +26,6 @@
         android:layout_marginTop="20dp" />
 
 
-    <!--<TextView-->
-        <!--android:id="@+id/title"-->
-        <!--style="@style/AuthTitle"-->
-        <!--/>-->
-
-    <!--<TextView-->
-        <!--android:id="@+id/subtitle"-->
-        <!--style="@style/AuthTitle"-->
-        <!--android:textSize="15sp"-->
-        <!--android:layout_below="@id/title"-->
-        <!--android:text="@string/slogan"-->
-        <!--android:layout_alignParentTop="false"-->
-        <!--android:layout_marginTop="0dp" />-->
-
     <LinearLayout
         android:id="@+id/keysLayout"
         style="@style/AuthFieldContainer"

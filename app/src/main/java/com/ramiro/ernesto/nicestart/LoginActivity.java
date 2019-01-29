@@ -9,6 +9,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.RequestOptions;
+
 //import android.support.v7.app.ActionBarActivity;
 
 
@@ -16,16 +20,16 @@ public class LoginActivity extends Activity {
 
    protected TextView mSignUpTextview;
     protected Button mLoginButton;
-    protected TextInputLayout mUsername;
-    protected ImageView mImageView;
+    protected TextInputLayout mPassword;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-//        mUsername = (TextInputLayout)findViewById(R.id.passwordTIL);
-//        mUsername.requestFocus();
+//        mPassword = (TextInputLayout)findViewById(R.id.passwordTIL);
+//        mPassword.requestFocus();
 
 
         mLoginButton = (Button)findViewById(R.id.loginbutton);
@@ -53,40 +57,5 @@ public class LoginActivity extends Activity {
         });
 
 
-
-
-
-
-
     }
-
-
-//    public void onClick (View textView){
-//        Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
-//        startActivity(intent);
-//
-//    }
-
-
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.menu_login, menu);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        // Handle action bar item clicks here. The action bar will
-//        // automatically handle clicks on the Home/Up button, so long
-//        // as you specify a parent activity in AndroidManifest.xml.
-//        int id = item.getItemId();
-//
-//        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
-//
-//        return super.onOptionsItemSelected(item);
-//    }
 }

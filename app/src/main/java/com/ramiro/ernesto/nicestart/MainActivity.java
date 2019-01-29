@@ -1,9 +1,12 @@
 package com.ramiro.ernesto.nicestart;
 
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -84,6 +87,43 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    public void showAlertDialogButtonClicked(MainActivity view) {
+
+        // setup the alert builder
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Achtung!");
+        builder.setMessage("Do you really LoVE it?");
+        builder.setIcon(R.drawable.ic_action_name_dark);
+
+        // add the buttons
+        builder.setPositiveButton("Yes I do", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // do something like...
+                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                            startActivity(intent);
+//                            dialog.dismiss();
+
+            }
+        });
+
+        builder.setNegativeButton("I'm afraid...", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                // do something like...
+                dialog.dismiss();
+            }
+        });
+
+        // create and show the alert dialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+
+
+
     //    creamos una lista de eventos para los items del menu del AppBar
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -92,18 +132,13 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             Toast toast = Toast.makeText(this, "going Settings", Toast.LENGTH_LONG);
             toast.show();
         } else if (id == R.id.camera) {
 
-                    Intent intent = new Intent(MainActivity.this, Main2Activity.class);
-                    startActivity(intent);
+            showAlertDialogButtonClicked(MainActivity.this);
 
-            Toast toast = Toast.makeText(this, "going APPBaR CAMERA", Toast.LENGTH_LONG);
-
-            toast.show();
         }
 
         return super.onOptionsItemSelected(item);

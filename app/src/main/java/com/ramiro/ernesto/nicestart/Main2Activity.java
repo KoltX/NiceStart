@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+
 import com.bumptech.glide.request.RequestOptions;
 
 
@@ -18,6 +19,7 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
                 ivImg = (ImageView) findViewById(R.id.imageView2);
+
 
         Glide.with(this)
                 .load(R.drawable.tenor)

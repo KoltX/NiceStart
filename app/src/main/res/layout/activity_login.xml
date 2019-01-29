@@ -3,12 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/holo_orange_dark">
-    <!--android:background="@drawable/background_fill"-->
 
 
     <ImageView
         android:id="@+id/backgroundImage"
-        android:src="@drawable/girl"
+
         android:scaleType="fitStart"
         android:layout_alignParentLeft="true"
         android:layout_height="match_parent"
@@ -16,7 +15,8 @@
         android:layout_width="match_parent"
         android:layout_alignParentTop="true"
         android:layout_marginTop="50dp"
-        android:layout_marginBottom="-50dp" />
+        android:layout_marginBottom="-50dp"
+        android:src="@drawable/girl"/>
 
 
 
@@ -29,19 +29,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="20dp" />
 
-    <!--<TextView-->
-        <!--android:id="@+id/title"-->
-        <!--style="@style/AuthTitle"-->
-        <!--android:layout_marginTop="10dp" />-->
-
-    <!--<TextView-->
-        <!--android:id="@+id/subtitle"-->
-        <!--style="@style/AuthTitle"-->
-        <!--android:textSize="15sp"-->
-        <!--android:layout_below="@id/title"-->
-        <!--android:text="@string/slogan"-->
-        <!--android:layout_alignParentTop="false"-->
-        <!--android:layout_marginTop="0dp" />-->
 
     <LinearLayout
         android:id="@+id/keysLayout"
@@ -104,7 +91,6 @@
         android:layout_centerHorizontal="true"
         android:textColor="@android:color/white"
         />
-    <!--android:onClick="onClick"-->
-    <!--android:clickable="true"-->
+
 
 </RelativeLayout>
