@@ -91,6 +91,9 @@ public class MainActivity extends AppCompatActivity {
 
         // setup the alert builder
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+//        builder.setView(getLayoutInflater().inflate(R.layout.dialog_view, null));
+
         builder.setTitle("Achtung!");
         builder.setMessage("Do you really LoVE it?");
         builder.setIcon(R.drawable.ic_action_name_dark);
@@ -102,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
                 // do something like...
                 Intent intent = new Intent(MainActivity.this, Main2Activity.class);
                             startActivity(intent);
-//                            dialog.dismiss();
+                            dialog.dismiss();
 
             }
         });

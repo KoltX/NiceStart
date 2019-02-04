@@ -19,7 +19,7 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
 
 //        cancel button
         mCancelButton = (Button)findViewById(R.id.cancelbutton);

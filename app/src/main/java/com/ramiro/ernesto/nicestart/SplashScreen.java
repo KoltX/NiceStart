@@ -3,6 +3,7 @@ package com.ramiro.ernesto.nicestart;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.media.Image;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -11,6 +12,10 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.RequestOptions;
 
 /**
  * Created by ernesto on 29/01/16.
@@ -27,6 +32,20 @@ public class SplashScreen extends Activity {
         TextView myTitle = (TextView)findViewById(R.id.textView3);
         TextView mySubtitle = (TextView)findViewById(R.id.textView4);
         ImageView myImage = (ImageView)findViewById(R.id.imageView);
+
+        ImageView mForest = (ImageView) findViewById(R.id.backforest);
+
+
+        Glide.with(this)
+                .load(R.drawable.mforests)
+                .apply(new RequestOptions()
+
+//                        .override(50, 50)
+                        .centerCrop()
+                        .diskCacheStrategy(DiskCacheStrategy.ALL)
+                )
+                .into(mForest);
+
 
 //        // sets a Pretty Custom Font
 //        Typeface myFont = Typeface.createFromAsset(getAssets(), "bromello.otf");
