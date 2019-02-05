@@ -55,7 +55,7 @@ public class SplashScreen extends Activity {
 //        myTitle.setTypeface(typeface);
 
         //implements and starts animation
-        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.leftin);
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.fadein);
 
         mySubtitle.startAnimation(myanim);
         openApp(true);
@@ -72,7 +72,7 @@ public class SplashScreen extends Activity {
                 startActivity(intent);
                 finish();
             }
-        }, 4000);
+        }, 5000);
     }
 
 }
