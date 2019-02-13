@@ -1,6 +1,9 @@
 package com.ramiro.ernesto.nicestart;
 
 import android.test.ActivityInstrumentationTestCase2;
+//import static android.support.test.espresso.Espresso.onView;
+//import static android.support.test.espresso.action.ViewActions.typeText;
+//import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import android.test.TouchUtils;
 import android.widget.Button;
 import android.widget.EditText;
@@ -37,12 +40,16 @@ public class ExampleInstrumentedTest extends ActivityInstrumentationTestCase2<Lo
     private static final String PASSWORD = "123456";
 
     public void testLoginSignup() {
+//        onView(withId(R.id.email)).perform(typeText(USERNAME));
+//        onView(withId(R.id.password)).perform(typeText(PASSWORD));
+
+        // first tap on value1 entry
         TouchUtils.tapView(this, etext1);
         getInstrumentation().sendStringSync(USERNAME);
-//        // now on value2 entry
+        // now on value2 entry
         TouchUtils.tapView(this, etext2);
         getInstrumentation().sendStringSync(PASSWORD);
-        // now on Add button
+        // now on login button
         TouchUtils.tapView(this, mloginbutton);
 
     }
