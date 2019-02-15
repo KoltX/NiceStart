@@ -95,11 +95,11 @@ public class MainActivity extends AppCompatActivity {
 //        builder.setView(getLayoutInflater().inflate(R.layout.dialog_view, null));
 
         builder.setTitle("Achtung!");
-        builder.setMessage("Do you really LoVE it?");
+        builder.setMessage("Where do you go?");
         builder.setIcon(R.drawable.ic_action_name_dark);
 
         // add the buttons
-        builder.setPositiveButton("Yes I do", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Go to GIF", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 // do something like...
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        builder.setNegativeButton("I'm afraid...", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("Go to ChatBot", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
