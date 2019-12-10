@@ -1,3 +1,4 @@
+/*
 package com.ramiro.ernesto.nicestart;
 
 import android.test.ActivityInstrumentationTestCase2;
@@ -9,9 +10,11 @@ import android.widget.Button;
 import android.widget.EditText;
 
 
+*/
 /**
  * @author ernesto
- */
+ *//*
+
 
 public class ExampleInstrumentedTest extends ActivityInstrumentationTestCase2<LoginActivity> {
 
@@ -53,4 +56,6 @@ public class ExampleInstrumentedTest extends ActivityInstrumentationTestCase2<Lo
         TouchUtils.tapView(this, mloginbutton);
 
     }
+
 }
+*/

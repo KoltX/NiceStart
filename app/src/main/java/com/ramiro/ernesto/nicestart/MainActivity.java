@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
         builder.setIcon(R.drawable.ic_action_name_dark);
 
         // add the buttons
-        builder.setPositiveButton("Go to GIF", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("GIF", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 // do something like...
@@ -110,12 +110,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        builder.setNegativeButton("Go to ChatBot", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("ChatBot", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
                 // do something like...
                 Intent intent = new Intent(MainActivity.this, MyWebView.class);
+                startActivity(intent);
+
+                dialog.dismiss();
+            }
+        });
+
+        builder.setNeutralButton("MotionLayout", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                // do something like...
+                Intent intent = new Intent(MainActivity.this, Motion.class);
                 startActivity(intent);
 
                 dialog.dismiss();
