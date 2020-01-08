@@ -1,6 +1,5 @@
 package com.ramiro.ernesto.nicestart;
 
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,12 +13,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.bumptech.glide.Glide;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -99,11 +95,11 @@ public class MainActivity extends AppCompatActivity {
         builder.setIcon(R.drawable.ic_action_name_dark);
 
         // add the buttons
-        builder.setPositiveButton("GIF", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Chart", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 // do something like...
-                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                Intent intent = new Intent(MainActivity.this, AnyChartActivity.class);
                             startActivity(intent);
                             dialog.dismiss();
 
