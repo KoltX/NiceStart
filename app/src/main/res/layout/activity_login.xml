@@ -88,15 +88,14 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/signup_text"
         android:text="@string/signup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:layout_below="@+id/loginbutton"
         android:layout_centerHorizontal="true"
-        android:textColor="@android:color/white"
-        />
+        android:textColor="@android:color/white" />
 
 
 </RelativeLayout>
