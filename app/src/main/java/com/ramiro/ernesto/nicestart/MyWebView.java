@@ -1,6 +1,5 @@
 package com.ramiro.ernesto.nicestart;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.webkit.WebSettings;
@@ -29,7 +28,8 @@ public class MyWebView extends AppCompatActivity {
 //                        "    height=\"430\"\n" +
                         "    width=\"100%\"\n" +
                         "    height=\"100%\"\n" +
-                        "    src=\"https://console.dialogflow.com/api-client/demo/embedded/ad0227a0-d37d-4437-9761-899ad31d42d1\">\n" +
+                "    src=\"https://console.dialogflow.com/api-client/demo/embedded/fb934939-194a-49df-9e41-b20a3a1ba073\">\n" +
+//                        "    src=\"https://console.dialogflow.com/api-client/demo/embedded/ad0227a0-d37d-4437-9761-899ad31d42d1\">\n" +
                         "</iframe>\n", "text/html",
                 "utf-8");
 
