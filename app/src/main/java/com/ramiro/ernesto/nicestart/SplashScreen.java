@@ -2,8 +2,6 @@ package com.ramiro.ernesto.nicestart;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Typeface;
-import android.media.Image;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -39,13 +37,21 @@ public class SplashScreen extends Activity {
         Glide.with(this)
                 .load(R.drawable.mforests)
                 .apply(new RequestOptions()
-
 //                        .override(50, 50)
                         .centerCrop()
                         .diskCacheStrategy(DiskCacheStrategy.ALL)
                 )
                 .into(mForest);
 
+
+//        Glide.with(this)
+//                .load(R.drawable.mforests)
+//                .centerCrop()
+//                .placeholder(R.drawable.mforests)
+//                .into(mForest);
+//
+//        return mForest;
+//    }
 
 //        // sets a Pretty Custom Font
 //        Typeface myFont = Typeface.createFromAsset(getAssets(), "bromello.otf");

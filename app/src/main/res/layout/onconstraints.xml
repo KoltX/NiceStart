@@ -6,31 +6,56 @@
     android:layout_height="match_parent"
     android:backgroundTint="#3F51B5">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="86dp"
-        android:layout_height="48dp"
-        android:backgroundTint="@color/colorPrimary"
-        android:text="Button"
-        android:textColor="@android:color/white"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.923" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/username_hint"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="0dp"
         android:backgroundTint="@color/colorAccent"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="LOGIN"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.923" />
+        app:layout_constraintStart_toStartOf="@id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="0dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="SIGN UP"
+        android:textColor="@android:color/white"
+
+        app:layout_constraintEnd_toEndOf="@id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
