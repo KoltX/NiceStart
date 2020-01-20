@@ -26,13 +26,13 @@ public class LoginActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.onconstraints);
 
 //        mPassword = (TextInputLayout)findViewById(R.id.passwordTIL);
 //        mPassword.requestFocus();
 
 
-        mLoginButton = (Button)findViewById(R.id.loginbutton);
+        mLoginButton = (Button)findViewById(R.id.button3);
         mLoginButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){

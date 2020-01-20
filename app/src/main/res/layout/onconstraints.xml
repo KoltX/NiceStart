@@ -24,7 +24,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_tent" />
+        android:src="@drawable/ic_tent" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -74,7 +74,7 @@
         android:id="@+id/button3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/light_purple_button"
+        android:background="@drawable/button_custom"
         android:text="LOG IN"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -101,10 +101,11 @@
         android:layout_centerHorizontal="true"
         android:text="@string/signup_text"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        android:layout_marginTop="16dp"
+        />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
