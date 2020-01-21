@@ -6,12 +6,11 @@ import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.request.RequestOptions;
+//import com.bumptech.glide.Glide;
+//import com.bumptech.glide.load.engine.DiskCacheStrategy;
+//import com.bumptech.glide.request.RequestOptions;
 
 //import android.support.v7.app.ActionBarActivity;
 
@@ -26,7 +25,7 @@ public class LoginActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.onconstraints);
+        setContentView(R.layout.activity_login);
 
 //        mPassword = (TextInputLayout)findViewById(R.id.passwordTIL);
 //        mPassword.requestFocus();
