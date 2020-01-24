@@ -17,7 +17,7 @@ import android.widget.TextView;
 
 public class LoginActivity extends Activity {
 
-   protected TextView mSignUpTextview;
+    protected TextView mSignUpTextview;
     protected Button mLoginButton;
     protected TextInputLayout mPassword;
 
