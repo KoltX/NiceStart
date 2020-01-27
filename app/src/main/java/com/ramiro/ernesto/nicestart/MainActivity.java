@@ -88,11 +88,15 @@ public class MainActivity extends AppCompatActivity {
         // setup the alert builder
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-//        builder.setView(getLayoutInflater().inflate(R.layout.dialog_view, null));
 
-        builder.setTitle("Achtung!");
-        builder.setMessage("Where do you go?");
-        builder.setIcon(R.drawable.ic_action_name_dark);
+        //el dialogo estandar tiene título/icono pero podemos sustituirlo por un XML a medida
+//        builder.setTitle("Achtung!");
+//        builder.setMessage("Where do you go?");
+//        builder.setIcon(R.drawable.ic_action_name_dark);
+
+
+        // un XML a medida para el diálogo
+        builder.setView(getLayoutInflater().inflate(R.layout.dialog_view, null));
 
         // add the buttons
         builder.setPositiveButton("Chart", new DialogInterface.OnClickListener() {
