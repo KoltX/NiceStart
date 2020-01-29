@@ -43,5 +43,16 @@
 
     </android.support.v4.widget.SwipeRefreshLayout>
 
+    <Button
+        android:id="@+id/view"
+        android:text="Go PRO"
+        android:textColor="@android:color/white"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/buttoncorners" />
+
 
 </RelativeLayout>

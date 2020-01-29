@@ -29,9 +29,10 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_marginStart="8dp"
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintStart_toStartOf="parent"
-                motion:layout_constraintTop_toTopOf="parent">
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            >
             <CustomAttribute
                 motion:attributeName="BackgroundColor"
                 motion:customColorValue="#D81B60" />
@@ -45,7 +46,7 @@
         <Constraint android:id="@id/button"
                 android:layout_width="84dp"
                 android:layout_height="84dp"
-                android:layout_marginEnd="8dp"
+            motion:layout_constraintTop_toTopOf="parent"
                 motion:layout_constraintEnd_toEndOf="parent">
             <CustomAttribute
                 motion:attributeName="BackgroundColor"

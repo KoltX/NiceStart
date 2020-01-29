@@ -21,15 +21,15 @@ import com.bumptech.glide.request.RequestOptions;
  */
 
 public class SplashScreen extends Activity {
-    @RequiresApi(api = Build.VERSION_CODES.O)
+//    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
 
-        TextView myTitle = (TextView)findViewById(R.id.textView3);
+//        TextView myTitle = (TextView)findViewById(R.id.textView3);
         TextView mySubtitle = (TextView)findViewById(R.id.textView4);
-        ImageView myImage = (ImageView)findViewById(R.id.imageView);
+//        ImageView myImage = (ImageView)findViewById(R.id.imageView);
 
         ImageView mForest = (ImageView) findViewById(R.id.backforest);
 
