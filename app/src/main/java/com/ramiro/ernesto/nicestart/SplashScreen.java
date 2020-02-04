@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
+import com.bumptech.glide.request.target.Target;
 
 /**
  * Created by ernesto on 29/01/16.
@@ -28,30 +29,36 @@ public class SplashScreen extends Activity {
         setContentView(R.layout.splash_screen);
 
 //        TextView myTitle = (TextView)findViewById(R.id.textView3);
-        TextView mySubtitle = (TextView)findViewById(R.id.textView4);
 //        ImageView myImage = (ImageView)findViewById(R.id.imageView);
+
 
         ImageView mForest = (ImageView) findViewById(R.id.backforest);
 
-
+//    New Glide
         Glide.with(this)
                 .load(R.drawable.mforests)
                 .apply(new RequestOptions()
 //                        .override(50, 50)
                         .centerCrop()
-                        .diskCacheStrategy(DiskCacheStrategy.ALL)
+//                        .circleCrop()
+//                        .diskCacheStrategy(DiskCacheStrategy.ALL)
                 )
                 .into(mForest);
 
 
+
+
+////        Glide
 //        Glide.with(this)
 //                .load(R.drawable.mforests)
-//                .centerCrop()
-//                .placeholder(R.drawable.mforests)
-//                .into(mForest);
 //
-//        return mForest;
-//    }
+////                .override(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL)
+////                .centerCrop()
+////                .circleCrop()
+//                .into(mForest)
+//                ;
+
+
 
 //        // sets a Pretty Custom Font
 //        Typeface myFont = Typeface.createFromAsset(getAssets(), "bromello.otf");
@@ -60,10 +67,12 @@ public class SplashScreen extends Activity {
 //        Typeface typeface = getResources().getFont(R.font.bromello);
 //        myTitle.setTypeface(typeface);
 
-        //implements and starts animation
-        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.fadein);
 
+        //implements and starts animation
+        TextView mySubtitle = (TextView)findViewById(R.id.textView4);
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.fadein);
         mySubtitle.startAnimation(myanim);
+
         openApp(true);
     }
 

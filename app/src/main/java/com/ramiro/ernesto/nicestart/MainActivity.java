@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // un XML a medida para el diálogo
-        builder.setView(getLayoutInflater().inflate(R.layout.dialog_view, null));
+        builder.setView(getLayoutInflater().inflate(R.layout.dialog_view_scrim, null));
 
         // add the buttons
         builder.setPositiveButton("Chart", new DialogInterface.OnClickListener() {

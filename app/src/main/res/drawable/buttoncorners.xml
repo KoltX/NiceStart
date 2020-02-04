@@ -3,18 +3,13 @@
     android:layout_width="100dp"
     android:layout_height="80dp"
     >
-
     <corners
         android:topLeftRadius="30dip"
         android:topRightRadius="0dip"
         android:bottomRightRadius="30dip"
         android:bottomLeftRadius="0dip" />
 
-    <!--<size-->
-    <!--android:height="31dp"-->
-    <!--android:width="175dp" />-->
     <stroke android:width="8px" android:color="@android:color/white" />
-
 
     <solid android:color="#00ffffff"/>
 
