@@ -99,11 +99,11 @@ public class MainActivity extends AppCompatActivity {
         builder.setView(getLayoutInflater().inflate(R.layout.dialog_view_scrim, null));
 
         // add the buttons
-        builder.setPositiveButton("Chart", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Glide", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 // do something like...
-                Intent intent = new Intent(MainActivity.this, AnyChartActivity.class);
+                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
                             startActivity(intent);
                             dialog.dismiss();
 
