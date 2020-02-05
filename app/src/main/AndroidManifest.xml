@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ramiro.ernesto.nicestart"
-    android:versionCode="2"
-    android:versionName="Nicestart">
+    package="com.ramiro.ernesto.nicestart">
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
@@ -16,25 +14,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AnyChartActivity"></activity>
+<!--        <activity android:name=".RssActivity"></activity>-->
+        <activity android:name=".AnyChartActivity" />
         <activity android:name=".Motion" />
         <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity" />
         <activity
             android:name=".SignupActivity"
-            android:parentActivityName=".AnyChartActivity"
-            />
-
-        <activity android:name=".SplashScreen"
+            android:parentActivityName=".AnyChartActivity" />
+        <activity
+            android:name=".SplashScreen"
             android:theme="@style/MyTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity"
-
-        />
+        <activity android:name=".Main2Activity" />
         <activity android:name=".MyWebView" />
     </application>
 
