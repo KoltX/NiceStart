@@ -14,14 +14,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<!--        <activity android:name=".RssActivity"></activity>-->
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <!-- <activity android:name=".RssActivity"></activity> -->
         <activity android:name=".AnyChartActivity" />
         <activity android:name=".Motion" />
         <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity" />
-        <activity
-            android:name=".SignupActivity"
-            android:parentActivityName=".AnyChartActivity" />
+        <activity android:name=".SignupActivity" />
         <activity
             android:name=".SplashScreen"
             android:theme="@style/MyTheme">
@@ -31,7 +33,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity" />
+        <activity
+            android:name=".Main2Activity"
+            android:parentActivityName=".Motion" />
         <activity android:name=".MyWebView" />
     </application>
 

@@ -28,8 +28,8 @@ public class SplashScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
 
-//        TextView myTitle = (TextView)findViewById(R.id.textView3);
-//        ImageView myImage = (ImageView)findViewById(R.id.imageView);
+        TextView myTitle = (TextView)findViewById(R.id.textView3);
+        ImageView myImage = (ImageView)findViewById(R.id.imageView);
 
 
         ImageView mForest = (ImageView) findViewById(R.id.backforest);
