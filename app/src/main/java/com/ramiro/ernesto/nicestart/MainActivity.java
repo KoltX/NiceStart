@@ -27,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Display icon in the toolbar
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.mipmap.tent_launcher2);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
+
 //        ivImg = (ImageView) findViewById(R.id.ivImg);
 //
 //        Glide.with(this)
@@ -153,7 +159,9 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             Toast toast = Toast.makeText(this, "going Settings", Toast.LENGTH_LONG);
             toast.show();
+
         } else if (id == R.id.camera) {
+            Intent intent = new Intent(MainActivity.this, ScrollingActivity.class);
 
             showAlertDialogButtonClicked(MainActivity.this);
 
@@ -180,10 +188,14 @@ public class MainActivity extends AppCompatActivity {
             case R.id.camera:
                 Toast toast = Toast.makeText(this, "going CONTEXT CAMERA", Toast.LENGTH_LONG);
                 toast.show();
+                Intent intent = new Intent(MainActivity.this, ScrollingActivity.class);
+                startActivity(intent);
                 break;
             case R.id.action_settings:
                 Toast toast2 = Toast.makeText(this, "going CONTEXT SETTINGS", Toast.LENGTH_LONG);
                 toast2.show();
+                Intent intent2 = new Intent(MainActivity.this, AnyChartActivity.class);
+                startActivity(intent2);
                 break;
         }
         return super.onContextItemSelected(item);
