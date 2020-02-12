@@ -35,16 +35,16 @@
                 android:background="@drawable/scrim"
                 />
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Wild Beaches"
-                android:textSize="32sp"
-                android:textStyle="bold"
-                android:textColor="@android:color/white"
-                android:paddingStart="16dp"
-                android:layout_gravity="bottom"/>
+<!--            <TextView-->
+<!--                android:id="@+id/textView2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Wild Beaches"-->
+<!--                android:textSize="32sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:paddingStart="16dp"-->
+<!--                android:layout_gravity="bottom"/>-->
 
 
 

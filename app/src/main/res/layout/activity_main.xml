@@ -54,5 +54,18 @@
         android:layout_marginBottom="120dp"
         android:background="@drawable/buttoncorners" />
 
+    <com.alespero.expandablecardview.ExpandableCardView
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:title="Passengers"
+        app:icon="@drawable/anim_vector"
+        app:inner_view="@layout/inner_view"
+        app:expandOnClick="true"
+        app:animationDuration="300"
+        app:startExpanded="false"/>
+
 
 </RelativeLayout>

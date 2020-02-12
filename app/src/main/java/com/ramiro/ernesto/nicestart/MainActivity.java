@@ -17,6 +17,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.alespero.expandablecardview.ExpandableCardView;
+
 public class MainActivity extends AppCompatActivity {
 
     private SwipeRefreshLayout swipeLayout;
@@ -31,6 +33,15 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.mipmap.tent_launcher2);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
+
+
+        ExpandableCardView card = findViewById(R.id.profile);
+        card.setOnExpandedListener(new ExpandableCardView.OnExpandedListener() {
+            @Override
+            public void onExpandChanged(View v, boolean isExpanded) {
+                Toast.makeText(MainActivity.this, isExpanded ? "Expanded!" : "Collapsed!", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
 //        ivImg = (ImageView) findViewById(R.id.ivImg);
