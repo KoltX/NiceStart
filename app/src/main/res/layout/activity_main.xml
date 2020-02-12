@@ -4,11 +4,8 @@
     android:id="@+id/activity_main_context"
     tools:context="com.ramiro.ernesto.nicestart.MainActivity"
     style="@style/MyViewok"
-    android:background="@android:color/holo_orange_dark"
+    android:background="@android:color/darker_gray"
     >
-
-
-
 
     <com.mikhaellopez.circularimageview.CircularImageView
         android:layout_width="150dp"
@@ -62,7 +59,7 @@
         android:layout_height="wrap_content"
         app:title="Passengers"
         app:icon="@drawable/anim_vector"
-        app:inner_view="@layout/inner_view"
+        app:inner_view="@layout/dialog_view"
         app:expandOnClick="true"
         app:animationDuration="300"
         app:startExpanded="false"/>
