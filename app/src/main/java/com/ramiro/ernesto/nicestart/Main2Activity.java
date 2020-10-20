@@ -32,15 +32,15 @@ public class Main2Activity extends AppCompatActivity {
 
 //"http://wallpapers.ae/wp-content/uploads/2015/09/Maldives-sea-wallpaper.jpg"
 
-        BottomAppBar bar = (BottomAppBar) findViewById(R.id.bar);
-        setSupportActionBar(bar);
-        
-        bar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Handle the navigation click by showing a BottomDrawer etc.
-            }
-        });
+//        BottomAppBar bar = (BottomAppBar) findViewById(R.id.bar);
+//        setSupportActionBar(bar);
+//
+//        bar.setNavigationOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // Handle the navigation click by showing a BottomDrawer etc.
+//            }
+//        });
 
 //        BottomAppBar bar = (BottomAppBar) findViewById(R.id.bar);
 //

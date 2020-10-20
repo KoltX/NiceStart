@@ -28,7 +28,9 @@ public class SplashScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
 
-        TextView myTitle = (TextView)findViewById(R.id.textView3);
+//        TextView myTitle = (TextView)findViewById(R.id.textView3);
+//        myTitle.setBackgroundColor(getResources().getColor(R.color.background_purple));
+
         ImageView myImage = (ImageView)findViewById(R.id.imageView);
 
 

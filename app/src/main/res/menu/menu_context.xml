@@ -4,14 +4,13 @@
     tools:context="com.ramiro.ernesto.nicestart.MainActivity">
 
     <item
-        android:title="Camera"
         android:id="@+id/camera"
+        android:title="@string/title_activity_scrolling"
 
         />
 
     <item
         android:id="@+id/action_settings"
-        android:title="Settings"
-        />
+        android:title="AnyChart" />
 </menu>
 

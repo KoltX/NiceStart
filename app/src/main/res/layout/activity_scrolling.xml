@@ -17,38 +17,48 @@
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/toolbar_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:fitsSystemWindows="true"
-            app:contentScrim="?attr/colorPrimary"
+            app:contentScrim="@drawable/beach"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:toolbarId="@+id/toolbar">
-
+<!--            app:contentScrim="?attr/colorPrimary"-->
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/beach"
                 android:scaleType="centerCrop"
                 />
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/scrim"
+
+            <TextView
+                android:id="@+id/circledata"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/circle"
+                android:layout_gravity="center"
+                android:paddingTop="25dp"
+                android:paddingLeft="5dp"
+                android:text="Medio"
+                android:textSize="32sp"
+                android:textStyle="bold"
                 />
 
-<!--            <TextView-->
-<!--                android:id="@+id/textView2"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Wild Beaches"-->
-<!--                android:textSize="32sp"-->
-<!--                android:textStyle="bold"-->
-<!--                android:textColor="@android:color/white"-->
-<!--                android:paddingStart="16dp"-->
-<!--                android:layout_gravity="bottom"/>-->
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wild Beaches"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:paddingStart="16dp"
+                android:layout_gravity="bottom"/>
 
 
 
             <android.support.v7.widget.Toolbar
+                android:layout_marginBottom="50dp"
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
