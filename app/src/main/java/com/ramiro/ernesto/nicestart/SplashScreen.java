@@ -31,7 +31,7 @@ public class SplashScreen extends Activity {
 //        TextView myTitle = (TextView)findViewById(R.id.textView3);
 //        myTitle.setBackgroundColor(getResources().getColor(R.color.background_purple));
 
-        ImageView myImage = (ImageView)findViewById(R.id.imageView);
+//        ImageView myImage = (ImageView)findViewById(R.id.imageView);
 
 
         ImageView mForest = (ImageView) findViewById(R.id.backforest);
