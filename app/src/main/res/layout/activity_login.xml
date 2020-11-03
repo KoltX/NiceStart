@@ -14,77 +14,76 @@
         android:src="@drawable/girl" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="88dp"
-        android:layout_height="88dp"
+        android:id="@+id/logo"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
         android:layout_marginTop="32dp"
         android:src="@drawable/ic_tent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/usernameTIL"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:alpha="0.8"
         android:background="@android:color/white"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4">
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/logo">
 
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/usernameTIL"
+        <AutoCompleteTextView
+            android:id="@+id/username"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:hint="@string/username_hint"
+            android:maxLines="1" />
 
-            <AutoCompleteTextView
-                android:id="@+id/email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/username_hint"
-                android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
 
-        </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passwordTIL"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:alpha="0.8"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/usernameTIL">
 
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/passwordTIL"
+        <EditText
+            android:id="@+id/password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
 
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="password"
-                android:inputType="textPassword"
-                android:maxLines="1" />
-        </android.support.design.widget.TextInputLayout>
-    </LinearLayout>
 
     <Button
         android:id="@+id/button1"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:background="@drawable/button_custom"
         android:text="LOG IN"
         android:textColor="@color/background_purple"
         app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTIL" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:background="@color/colorPrimary"
         android:text="GUEST"
         android:textColor="@android:color/white"
-        app:layout_constraintEnd_toEndOf="@id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintStart_toEndOf="@+id/button1"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordTIL" />
 
 
     <TextView
@@ -100,11 +99,18 @@
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guideline"
+        android:id="@+id/guideline1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.15" />
+        app:layout_constraintGuide_percent="0.20" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -33,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
 //        mPassword.requestFocus();
 
 
-        mLoginButton = (Button)findViewById(R.id.button3);
+        mLoginButton = (Button)findViewById(R.id.button1);
         mLoginButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
