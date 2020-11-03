@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/holo_orange_dark">
@@ -66,17 +65,15 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/button_custom"
         android:text="LOG IN"
         android:textColor="@color/background_purple"
-        android:visibility="visible"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintStart_toStartOf="@id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-         />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <Button
         android:id="@+id/button2"
@@ -85,9 +82,8 @@
         android:background="@color/colorPrimary"
         android:text="GUEST"
         android:textColor="@android:color/white"
-        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="@id/linearLayout"
-        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/button1"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 
@@ -95,12 +91,10 @@
         android:id="@+id/signup_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:text="@string/signup_text"
         android:textColor="@android:color/white"
         android:textSize="18sp"
-        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
@@ -110,9 +104,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="46dp" />
-
-
+        app:layout_constraintGuide_percent="0.15" />
 
 
 </android.support.constraint.ConstraintLayout>
