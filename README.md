@@ -1,2 +1,3 @@
 # NiceStart
-![](https://github.com/atomms/NiceStart/blob/master/app/src/main/assets/girl.png)
+![](app/src/main/res/drawable/splash.jpg)
+![](app/src/main/res/drawable/login.jpg)
