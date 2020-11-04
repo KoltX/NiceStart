@@ -26,11 +26,11 @@
             android:name=".Main3Activity"
             android:label="@string/title_activity_main3"
             android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="locked"></activity>
+            android:screenOrientation="locked"/>
         <activity
             android:name=".ScrollingActivity"
             android:label="@string/title_activity_scrolling"
-            android:theme="@style/AppTheme.NoActionBar" /> <!-- <activity android:name=".RssActivity"></activity> -->
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".AnyChartActivity" />
         <activity android:name=".Motion" />
         <activity android:name=".MainActivity" />
@@ -44,7 +44,6 @@
             android:theme="@style/MyTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
