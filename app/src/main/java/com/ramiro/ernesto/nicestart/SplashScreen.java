@@ -34,7 +34,7 @@ public class SplashScreen extends Activity {
 //        ImageView myImage = (ImageView)findViewById(R.id.imageView);
 
 
-        ImageView mForest = (ImageView) findViewById(R.id.backforest);
+        ImageView mForest = findViewById(R.id.backforest);
 
 //    New Glide
         Glide.with(this)
