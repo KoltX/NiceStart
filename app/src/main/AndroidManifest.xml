@@ -11,12 +11,15 @@
 
     <application
         android:allowBackup="true"
+        android:appComponentFactory="whateverString"
         android:icon="@mipmap/tent_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/tent_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivityTry"></activity>
+        android:theme="@style/AppTheme"
+        tools:replace="android:appComponentFactory">
+        <activity android:name=".LoginActivityAlco"></activity>
+        <activity android:name=".LoginActivityTry" />
         <activity
             android:name=".Main3Activity"
             android:label="@string/title_activity_main3"
@@ -29,7 +32,7 @@
         <activity android:name=".AnyChartActivity" />
         <activity android:name=".Motion" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".SignupActivity" />
         <activity
             android:name=".SplashScreen"
