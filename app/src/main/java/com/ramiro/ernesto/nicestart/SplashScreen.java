@@ -2,27 +2,27 @@ package com.ramiro.ernesto.nicestart;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Build;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.RequiresApi;
+import android.os.Looper;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.request.RequestOptions;
-import com.bumptech.glide.request.target.Target;
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+
 
 /**
  * Created by ernesto on 29/01/16.
+ *
  * @version 0.1
  */
 
 public class SplashScreen extends Activity {
-//    @RequiresApi(api = Build.VERSION_CODES.O)
+    //    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,28 +38,15 @@ public class SplashScreen extends Activity {
 
 //    New Glide
         Glide.with(this)
-                .load(R.drawable.mforests)
-                .apply(new RequestOptions()
-//                        .override(50, 50)
-                        .centerCrop()
+                .load(R.drawable.mforest)
+                .centerCrop()
+//                .transition(DrawableTransitionOptions.withCrossFade(500))
+//                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.light_purple_button)))
 //                        .circleCrop()
-//                        .diskCacheStrategy(DiskCacheStrategy.ALL)
-                )
+//                        .diskCacheStrategy(DiskCacheStrategy.NONE)
                 .into(mForest);
 
-
-
-
-////        Glide
-//        Glide.with(this)
-//                .load(R.drawable.mforests)
-//
-////                .override(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL)
-////                .centerCrop()
-////                .circleCrop()
-//                .into(mForest)
-//                ;
-
+//        "https://images.unsplash.com/photo-1565214975484-3cfa9e56f914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80"
 
 
 //        // sets a Pretty Custom Font
@@ -71,7 +58,7 @@ public class SplashScreen extends Activity {
 
 
         //implements and starts animation
-        TextView mySubtitle = (TextView)findViewById(R.id.textView4);
+        TextView mySubtitle = (TextView) findViewById(R.id.textView4);
         Animation myanim = AnimationUtils.loadAnimation(this, R.anim.fadein);
         mySubtitle.startAnimation(myanim);
 
@@ -79,17 +66,34 @@ public class SplashScreen extends Activity {
     }
 
 
+//    new method
+
     private void openApp(boolean locationPermission) {
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
+
+        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent intent = new Intent(SplashScreen
                         .this, LoginActivity.class);
                 startActivity(intent);
-                finish();
             }
         }, 5000);
+
+
     }
 
 }
+
+
+//        old method
+
+//        Handler handler = new Handler();
+//        handler.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                Intent intent = new Intent(SplashScreen
+//                        .this, LoginActivity.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        }, 5000);
