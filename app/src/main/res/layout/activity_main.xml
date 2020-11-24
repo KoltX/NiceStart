@@ -2,67 +2,86 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main_context"
-    tools:context="com.ramiro.ernesto.nicestart.MainActivity"
     style="@style/MyViewok"
-    android:background="@android:color/darker_gray"
-    >
-
-    <com.mikhaellopez.circularimageview.CircularImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/hipman"
-        android:layout_centerHorizontal="true"
-        app:civ_border_color="#EEE"
-        app:civ_border_width="0dp"
-        app:civ_shadow="true"
-        app:civ_shadow_radius="0"
-        app:civ_shadow_color="#FFF"
-
-        />
+    tools:context="com.ramiro.ernesto.nicestart.MainActivity">
 
     <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/myswipe"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/myswipe">
+        android:layout_height="match_parent">
 
         <TextView
-            android:text="long tap for Context Menu"
+            android:id="@+id/longtap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:id="@+id/textView"
+            android:gravity="center_horizontal"
+
+            android:text="long tap or swipe to refresh"
+            android:textColor="@color/background_purple"
             android:textSize="24sp"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
+            android:textStyle="normal"
 
             />
 
 
     </android.support.v4.widget.SwipeRefreshLayout>
 
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/avatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/hipman"
+        app:civ_border_color="#EEE"
+        app:civ_border_width="0dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#111"
+        app:civ_shadow_radius="1"
+
+        />
+
     <Button
-        android:id="@+id/view"
-        android:text="Go PRO"
-        android:textColor="@android:color/white"
+        android:id="@+id/buttonpro"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/avatar"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
         android:layout_marginBottom="120dp"
-        android:background="@drawable/buttoncorners" />
+        android:background="@drawable/button_custom_border"
+        android:text="Go PRO"
+        android:textColor="@color/background_purple" />
+
+
+
 
     <com.alespero.expandablecardview.ExpandableCardView
-        android:layout_alignParentBottom="true"
-        android:background="@color/colorAccent"
         android:id="@+id/profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:title="Passengers"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        app:animationDuration="300"
+        app:expandOnClick="true"
         app:icon="@drawable/anim_vector"
         app:inner_view="@layout/dialog_view"
-        app:expandOnClick="true"
-        app:animationDuration="300"
-        app:startExpanded="false"/>
+        app:startExpanded="false"
+        app:title="Passengers" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/buttonpro"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        android:text="long tap for Context Menu"-->
+    <!--        android:textColor="@color/background_purple"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textStyle="normal" />-->
+
 
 
 </RelativeLayout>

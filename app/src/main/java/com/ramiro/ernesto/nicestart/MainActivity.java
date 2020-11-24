@@ -18,6 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.alespero.expandablecardview.ExpandableCardView;
+import com.mikhaellopez.circularimageview.CircularImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 //                .into(ivImg);
 
 //        cast a la vista a la que aplicamos un menu contextual y la registramos
-        TextView mycontext = (TextView) findViewById(R.id.textView);
+        TextView mycontext = findViewById(R.id.longtap);
         registerForContextMenu(mycontext);
 
 //       cast al Layout SwipeRefresh con el que rodeamos la vista en el xml y le colocamos un listener

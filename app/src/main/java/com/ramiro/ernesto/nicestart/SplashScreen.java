@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 
@@ -40,11 +41,12 @@ public class SplashScreen extends Activity {
         Glide.with(this)
                 .load(R.drawable.mforest)
                 .centerCrop()
-//                .transition(DrawableTransitionOptions.withCrossFade(500))
-//                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.light_purple_button)))
-//                        .circleCrop()
-//                        .diskCacheStrategy(DiskCacheStrategy.NONE)
+                .transition(DrawableTransitionOptions.withCrossFade(500))
+                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.light_purple_button)))
+//                .circleCrop()
+//                .diskCacheStrategy(DiskCacheStrategy.NONE)
                 .into(mForest);
+
 
 //        "https://images.unsplash.com/photo-1565214975484-3cfa9e56f914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80"
 

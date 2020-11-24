@@ -27,7 +27,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".AnyChartActivity" />
         <activity android:name=".Motion" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:screenOrientation="locked"/>
         <activity android:name=".LoginActivity" />
         <activity
             android:name=".SignupActivity"
@@ -43,7 +44,8 @@
         </activity>
         <activity
             android:name=".Main2Activity"
-            android:parentActivityName=".Motion" />
+            android:parentActivityName=".MainActivity" />
+
         <activity android:name=".MyWebView" />
 
         <meta-data
