@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     tools:context=".ScrollingActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/app_bar_height"
+        android:layout_height="150dp"
         android:fitsSystemWindows="true"
         android:theme="@style/AppTheme.AppBarOverlay">
 
@@ -18,7 +17,6 @@
             android:id="@+id/toolbar_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fitsSystemWindows="true"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:toolbarId="@+id/toolbar">
             <!-- app:contentScrim="@drawable/beach"
@@ -30,21 +28,14 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/beach" />
 
-                />
+            />
 
-            <!--            <TextView-->
-            <!--                android:id="@+id/circledata"-->
-            <!--                android:layout_width="100dp"-->
-            <!--                android:layout_height="100dp"-->
-            <!--                android:background="@drawable/circle"-->
-            <!--                android:layout_gravity="center"-->
-            <!--                android:paddingTop="25dp"-->
-            <!--                android:paddingLeft="5dp"-->
-            <!--                android:text="Medio"-->
-            <!--                android:textSize="32sp"-->
-            <!--                android:textStyle="bold"-->
-            <!--                />-->
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:alpha="0.3"
+                android:background="@drawable/scrimrectangle"
+                android:layout_gravity="bottom"/>
 
             <TextView
                 android:id="@+id/textView2"
@@ -53,15 +44,14 @@
                 android:layout_gravity="bottom"
                 android:paddingStart="16dp"
                 android:text="Wild Beaches"
-                android:textColor="@color/background_purple"
+                android:textColor="@android:color/white"
                 android:textSize="32sp"
-                android:textStyle="bold" />
-
+                 />
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="0dp"
                 android:layout_marginBottom="50dp"
                 app:layout_collapseMode="pin"
                 app:popupTheme="@style/AppTheme.PopupOverlay" />

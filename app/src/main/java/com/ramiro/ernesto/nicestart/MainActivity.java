@@ -214,4 +214,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void openScrolling(View view) {
+        Intent buttonintent = new Intent(this,ScrollingActivity.class);
+        startActivity(buttonintent);
+    }
 }
