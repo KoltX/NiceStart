@@ -23,23 +23,31 @@
 
             />
 
-
     </android.support.v4.widget.SwipeRefreshLayout>
 
-    <com.mikhaellopez.circularimageview.CircularImageView
-        android:id="@+id/avatar"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:src="@drawable/hipman"
-        app:civ_border_color="#EEE"
-        app:civ_border_width="0dp"
-        app:civ_shadow="true"
-        app:civ_shadow_color="#111"
-        app:civ_shadow_radius="1"
+<!--    <com.mikhaellopez.circularimageview.CircularImageView-->
+<!--        android:id="@+id/avatar"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:src="@drawable/hipman"-->
+<!--        app:civ_border_color="#EEE"-->
+<!--        app:civ_border_width="0dp"-->
+<!--        app:civ_shadow="true"-->
+<!--        app:civ_shadow_color="#111"-->
+<!--        app:civ_shadow_radius="1"-->
 
-        />
+<!--        />-->
+
+    <ImageView
+
+            android:id="@+id/avatar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+    />
 
     <Button
         android:id="@+id/buttonpro"

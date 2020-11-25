@@ -17,18 +17,23 @@
         android:scaleType="centerCrop"
  />
 
-    <android.support.design.widget.CoordinatorLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <!-- Other components and views -->
 
 
+<!--    <android.support.design.widget.CoordinatorLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
 
-    </android.support.design.widget.CoordinatorLayout>
+<!--        &lt;!&ndash; Other components and views &ndash;&gt;-->
 
+
+<!--    </android.support.design.widget.CoordinatorLayout>-->
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView7"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:srcCompat="@drawable/colorlock" />-->
 
 </android.support.constraint.ConstraintLayout>
 
