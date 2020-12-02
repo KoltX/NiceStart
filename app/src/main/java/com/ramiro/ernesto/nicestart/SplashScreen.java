@@ -16,6 +16,10 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 
+/**
+ * @author ernesto
+ */
+
 public class SplashScreen extends Activity {
     //    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
