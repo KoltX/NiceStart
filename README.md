@@ -1,3 +1,5 @@
 # NiceStart
-![](img/splash.jpg) ![](img/login.jpg)
+![](img/splash.jpg) | ![](img/login.jpg)
+
+
 
