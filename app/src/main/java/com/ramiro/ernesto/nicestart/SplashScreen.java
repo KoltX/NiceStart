@@ -17,7 +17,7 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 
 /**
- * @author ernesto 
+ * @author ernesto
  */
 
 public class SplashScreen extends Activity {
