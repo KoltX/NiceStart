@@ -16,7 +16,9 @@ import android.widget.TextView;
 //import android.support.v7.app.ActionBarActivity;
 
 
-
+/**
+ *
+ */
 public class LoginActivity extends AppCompatActivity {
 
     protected TextView mSignUpTextview;

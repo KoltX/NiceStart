@@ -2,7 +2,6 @@ package com.ramiro.ernesto.nicestart;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -22,7 +21,6 @@ import android.widget.Toast;
 import com.alespero.expandablecardview.ExpandableCardView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
-import com.mikhaellopez.circularimageview.CircularImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 
 
+        // Expandable Card
         ExpandableCardView card = findViewById(R.id.profile);
         card.setOnExpandedListener(new ExpandableCardView.OnExpandedListener() {
             @Override
@@ -55,16 +54,16 @@ public class MainActivity extends AppCompatActivity {
 //                .load("http://inthecheesefactory.com/uploads/source/glidepicasso/cover.jpg")
 //                .into(ivImg);
 
-//        cast a la vista a la que aplicamos un menu contextual y la registramos
-        TextView mycontext = findViewById(R.id.longtap);
+//        cast a la vista a la que aplicamos un MENU CONTEXTUAL y la registramos
+        ImageView mycontext = findViewById(R.id.avatar);
         registerForContextMenu(mycontext);
 
-//       cast al Layout SwipeRefresh con el que rodeamos la vista en el xml y le colocamos un listener
+//       cast al Layout SWIPEREFRESH con el que rodeamos la vista en el xml y le colocamos un listener
         swipeLayout = (SwipeRefreshLayout) findViewById(R.id.myswipe);
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
 
-        //    New Glide
 
+//    New Glide
         ImageView mForest = findViewById(R.id.avatar);
 
         Glide.with(this)
@@ -79,18 +78,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    // *** SWIPEREFRESH con SNACKAR ***
+
     //    construimos el Swipe y aplicamos un Listener que lanza un SnackBar y desactiva a continuación del Swipe la animación
+
     protected SwipeRefreshLayout.OnRefreshListener mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
         @Override
         public void onRefresh() {
 
-//    opción TOAST
-//
-//          Toast toast0 = Toast.makeText(MainContextActivity.this, "going swipeREFRESH", Toast.LENGTH_LONG);
-//          toast0.show();
+    //    opción TOAST
+    //
+    //          Toast toast0 = Toast.makeText(MainContextActivity.this, "going swipeREFRESH", Toast.LENGTH_LONG);
+    //          toast0.show();
 
 
-//   opción SNACKBAR
+    //   opción SNACKBAR
 
             final RelativeLayout mrelativeLayout = (RelativeLayout) findViewById(R.id.activity_main_context);
 
@@ -110,13 +112,8 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    //    inflamos el menu del AppBar con los items del recurso xml
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+
+    // *** DIALOGO MODAL ***
 
     public void showAlertDialogButtonClicked(MainActivity view) {
 
@@ -139,8 +136,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int which) {
                 // do something like...
                 Intent intent = new Intent(MainActivity.this, Main2Activity.class);
-                            startActivity(intent);
-                            dialog.dismiss();
+                startActivity(intent);
+                dialog.dismiss();
 
             }
         });
@@ -175,7 +172,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    // *** MENU APPBAR ***
 
+    //    inflamos el menu del AppBar con los items del recurso xml
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
 
     //    creamos una lista de eventos para los items del menu del AppBar
     @Override
@@ -198,6 +203,9 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+    // *** MENU CONTEXTUAL ***
 
     //    inflamos el menu contextual con los items del menu xml correspondiente
     @Override
@@ -232,7 +240,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void openScrolling(View view) {
-        Intent buttonintent = new Intent(this,ScrollingActivity.class);
+        Intent buttonintent = new Intent(this, ScrollingActivity.class);
         startActivity(buttonintent);
     }
 }
