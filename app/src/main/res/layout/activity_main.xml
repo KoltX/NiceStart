@@ -5,11 +5,30 @@
     style="@style/MyViewok"
     tools:context="com.ramiro.ernesto.nicestart.MainActivity">
 
+<!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/myswipe">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/taporswipetext"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center_horizontal"-->
+
+<!--        android:text="long tap or swipe to refresh"-->
+<!--        android:textColor="@color/background_purple"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="normal"-->
+
+<!--        />-->
+
+<!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/myswipe"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <TextView
             android:id="@+id/taporswipetext"
             android:layout_width="wrap_content"
@@ -22,6 +41,7 @@
             android:textStyle="normal"
 
             />
+
 
     </android.support.v4.widget.SwipeRefreshLayout>
 
