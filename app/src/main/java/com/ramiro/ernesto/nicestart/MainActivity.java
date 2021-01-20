@@ -3,6 +3,7 @@ package com.ramiro.ernesto.nicestart;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AlertDialog;
@@ -97,14 +98,16 @@ public class MainActivity extends AppCompatActivity {
 
     //   opción SNACKBAR
 
-            final RelativeLayout mrelativeLayout = (RelativeLayout) findViewById(R.id.activity_main_context);
+//           SUSTITUIR POR CONSTRAINT EN SU CASO
+//            final ConstraintLayout mLayout = (ConstraintLayout) findViewById(R.id.activity_main_context);
+            final RelativeLayout mLayout = (RelativeLayout) findViewById(R.id.activity_main_context);
 
             Snackbar snackbar = Snackbar
-                    .make(mrelativeLayout, "fancy a Snack while you refresh?", Snackbar.LENGTH_LONG)
+                    .make(mLayout, "fancy a Snack while you refresh?", Snackbar.LENGTH_LONG)
                     .setAction("UNDO", new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Snackbar snackbar1 = Snackbar.make(mrelativeLayout, "Action is restored!", Snackbar.LENGTH_SHORT);
+                            Snackbar snackbar1 = Snackbar.make(mLayout, "Action is restored!", Snackbar.LENGTH_SHORT);
                             snackbar1.show();
                         }
                     });
