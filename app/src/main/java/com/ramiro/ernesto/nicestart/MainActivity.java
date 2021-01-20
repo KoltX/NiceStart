@@ -22,6 +22,9 @@ import com.alespero.expandablecardview.ExpandableCardView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
+/**
+ * @author ernesto
+ */
 public class MainActivity extends AppCompatActivity {
 
     private SwipeRefreshLayout swipeLayout;
