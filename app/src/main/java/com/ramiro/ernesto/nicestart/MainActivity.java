@@ -3,7 +3,6 @@ package com.ramiro.ernesto.nicestart;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AlertDialog;
@@ -16,7 +15,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.alespero.expandablecardview.ExpandableCardView;
@@ -42,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 
 
-        // Expandable Card
+        // *** EXPANDABLE CARD ***
+
         ExpandableCardView card = findViewById(R.id.profile);
         card.setOnExpandedListener(new ExpandableCardView.OnExpandedListener() {
             @Override
@@ -50,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, isExpanded ? "Expanded!" : "Collapsed!", Toast.LENGTH_SHORT).show();
             }
         });
-
+        // ***      EC        ***
 
 //        ivImg = (ImageView) findViewById(R.id.ivImg);
 //
@@ -63,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         registerForContextMenu(mycontext);
 
 //       cast al Layout SWIPEREFRESH con el que rodeamos la vista en el xml y le colocamos un listener
-        swipeLayout = (SwipeRefreshLayout) findViewById(R.id.myswipe);
+        SwipeRefreshLayout swipeLayout = (SwipeRefreshLayout) findViewById(R.id.myswipe);
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
 
 
@@ -82,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    // *** SWIPEREFRESH con SNACKAR ***
+    // *** SWIPEREFRESH con SNACKBAR ***
 
     //    construimos el Swipe y aplicamos un Listener que lanza un SnackBar y desactiva a continuación del Swipe la animación
 
@@ -118,6 +117,8 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    // ***      SR      ***
+
 
     // *** DIALOGO MODAL ***
 
@@ -134,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // un XML a medida para el diálogo
-        builder.setView(getLayoutInflater().inflate(R.layout.dialog_view_scrim, null));
+        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
 
         // add the buttons
         builder.setPositiveButton("Glide", new DialogInterface.OnClickListener() {
@@ -177,6 +178,8 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();
     }
 
+    // ***     DM         ***
+
 
     // *** MENU APPBAR ***
 
@@ -209,6 +212,7 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    // ***      MAB      ***
 
 
     // *** MENU CONTEXTUAL ***
@@ -231,19 +235,19 @@ public class MainActivity extends AppCompatActivity {
             case R.id.camera:
                 Toast toast = Toast.makeText(this, "going CONTEXT CAMERA", Toast.LENGTH_LONG);
                 toast.show();
-                Intent intent = new Intent(MainActivity.this, ScrollingActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(MainActivity.this, ScrollingActivity.class);
+//                startActivity(intent);
                 break;
             case R.id.action_settings:
                 Toast toast2 = Toast.makeText(this, "going CONTEXT SETTINGS", Toast.LENGTH_LONG);
                 toast2.show();
-                Intent intent2 = new Intent(MainActivity.this, AnyChartActivity.class);
-                startActivity(intent2);
+//                Intent intent2 = new Intent(MainActivity.this, AnyChartActivity.class);
+//                startActivity(intent2);
                 break;
         }
         return super.onContextItemSelected(item);
     }
-
+    // ***      MC      ***
 
     public void openScrolling(View view) {
         Intent buttonintent = new Intent(this, ScrollingActivity.class);

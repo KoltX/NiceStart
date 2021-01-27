@@ -94,7 +94,7 @@
         app:animationDuration="300"
         app:expandOnClick="true"
         app:icon="@drawable/anim_vector"
-        app:inner_view="@layout/dialog_view"
+        app:inner_view="@layout/expandable_view"
         app:startExpanded="false"
         app:title="Passengers" />
 

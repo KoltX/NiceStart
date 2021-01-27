@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.ramiro.ernesto.nicestart.MainActivity">
     <item
-        android:id="@+id/camera"
-        android:title="@string/title_activity_scrolling"
+        android:id="@+id/edit"
+        android:title="Edit"
         />
     <item
-        android:id="@+id/action_settings"
-        android:title="AnyChart" />
+        android:id="@+id/delete"
+        android:title="Delete" />
 </menu>
 
